@@ -1,5 +1,3 @@
-import * as _datatableReducer from './datatable-reducer.js';
-
 export function accessObjectVal(key, obj) {
   let res = obj;
   const splitKey = key.split('.');
@@ -9,4 +7,4 @@ export function accessObjectVal(key, obj) {
   return res;
 }
 
-export const datatableReducer = _datatableReducer;
+export { default as datatableReducer } from './datatable-reducer.js';
