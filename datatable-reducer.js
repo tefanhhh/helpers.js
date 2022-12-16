@@ -27,3 +27,8 @@ export function cacheSpan(key, accessor, spans, DATA) {
 export function getRowSpan(col, index, spans) {    
   return spans[index] && spans[index][col];
 }
+
+export default {
+  cacheSpan,
+  getRowSpan
+}
