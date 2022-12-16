@@ -1,8 +1,12 @@
+import * as datatableReducer from './datatable-reducer.js';
+
 export function accessObjectVal(key, obj) {
-  let res = obj
-  const splitKey = key.split('.')
+  let res = obj;
+  const splitKey = key.split('.');
   for (const k of splitKey) {
-    res = res[k]
+    res = res[k];
   }
-  return res
+  return res;
 }
+
+export datatableReducer;
