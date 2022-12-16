@@ -7,4 +7,4 @@ export function accessObjectVal(key, obj) {
   return res;
 }
 
-export { default as datatableReducer } from './datatable-reducer.js';
+export datatableReducer from './datatable-reducer.js';
