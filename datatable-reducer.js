@@ -1,4 +1,4 @@
-function cacheSpan(key, accessor, spans, DATA) {
+export function cacheSpan(key, accessor, spans, DATA) {
   for (let i = 0; i < DATA.length;) {
     let currentValue = accessor(DATA[i]);
     let count = 1;
@@ -24,6 +24,6 @@ function cacheSpan(key, accessor, spans, DATA) {
   }
 }
 
-function getRowSpan(col, index, spans) {    
+export function getRowSpan(col, index, spans) {    
   return spans[index] && spans[index][col];
 }
