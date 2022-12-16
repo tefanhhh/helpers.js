@@ -1,4 +1,4 @@
-import * as datatableReducer from './datatable-reducer.js';
+import * as _datatableReducer from './datatable-reducer.js';
 
 export function accessObjectVal(key, obj) {
   let res = obj;
@@ -9,4 +9,4 @@ export function accessObjectVal(key, obj) {
   return res;
 }
 
-export datatableReducer;
+export const datatableReducer = _datatableReducer;
