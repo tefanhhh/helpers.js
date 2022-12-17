@@ -13,7 +13,7 @@ export function cacheSpan(key, accessor, spans, DATA) {
       count++;
     }
 
-    if (!this.spans[i]) {
+    if (!spans[i]) {
       spans[i] = {};
     }
 
@@ -28,19 +28,7 @@ export function getRowSpan(col, index, spans) {
   return spans[index] && spans[index][col];
 }
 
-export function reduceData(_data, ...childToReduce) {
-  const data = _data.reduce((prev, curr) => {     
-    for (let i = 0; i <= childToReduce.length - 1; i++) {
-      curr[childToReduce[i].key].forEach(childToReduce[i].func);
-    }
-    return prev;
-  }, []);
-  
-  return data;
-}
-
 export const datatableReducer = {
   cacheSpan,
-  getRowSpan,
-  reduceData
+  getRowSpan
 }
